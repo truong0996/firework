@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 x: Math.random() * 4 - 2,
                 y: Math.random() * 4 + 4
             };
-            this.maxY = (Math.random() * canvas.height) / 2 + canvas.height / 10;
+            this.maxY = (Math.random() * canvas.height) / 3 + canvas.height / 7;
             this.life = false;
         }
 
@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function animation() {
         window.requestAnimationFrame(animation);
 
-        c.fillStyle = "rgba(0, 0, 0, .5)";
+        c.fillStyle = "rgba(0, 0, 0, 0.15)";
         c.fillRect(0, 0, canvas.width, canvas.height);
         //c.drawImage(img, 0, 0, canvas.width, canvas.height);
 
